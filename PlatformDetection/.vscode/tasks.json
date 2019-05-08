@@ -1,0 +1,40 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+		{
+			"label": "build",
+			"command": "dotnet",
+			"type": "process",
+			"args": [
+				"build",
+				"${workspaceFolder}/PlatformDetection.csproj"
+			],
+			"problemMatcher": "$tsc",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"label": "publish",
+			"command": "dotnet",
+			"type": "process",
+			"args": [
+				"publish",
+				"${workspaceFolder}/PlatformDetection.csproj"
+			],
+			"problemMatcher": "$tsc"
+		},
+		{
+			"label": "watch",
+			"command": "dotnet",
+			"type": "process",
+			"args": [
+				"watch",
+				"run",
+				"${workspaceFolder}/PlatformDetection.csproj"
+			],
+			"problemMatcher": "$tsc"
+		}
+	]
+}
